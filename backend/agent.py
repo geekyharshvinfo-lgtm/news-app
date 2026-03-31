@@ -84,7 +84,7 @@ async def run_agent() -> list[dict]:
     """Run the news agent using Gemini. Returns list of 30 ranked news stories."""
 
     model = genai.GenerativeModel(
-        model_name="gemini-2.5-flash-lite",
+        model_name="gemini-2.5-flash",
         system_instruction=SYSTEM_PROMPT,
         tools=[GEMINI_TOOLS],
     )
